@@ -4,15 +4,13 @@ But for multiples of three print "Fizz" instead of the number, and for the multi
 For numbers which are both multiples of three and five print "FizzBuzz"
 """
 
-for num in list(range(1, 101)):
-    output = [int(x) for x in str(num)]
-    sum_output = sum(output)
-
-    if sum_output % 3 == 0:
-        print("Fizz")
-    elif sum_output % 5 == 0:
-        print("Buzz")
-    elif sum_output % 3 == 0 and sum_output % 5 == 0:
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
         print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
     else:
         print(num)
+ 
