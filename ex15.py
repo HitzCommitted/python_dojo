@@ -4,10 +4,10 @@ Given an integer n, return True if n is within 10 of either 100 or 200
 
 
 def almost_there(n):
-    num = 10
-    min_num = 100 - num
-    max_num = 100 + num
-    print(min_num, max_num)
+    return abs(100 - n) <= 10 or abs(200 - n) <= 20
 
 
-almost_there(10)
+print(almost_there(90))
+print(almost_there(104))
+print(almost_there(150))
+print(almost_there(209))
