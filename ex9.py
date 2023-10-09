@@ -1,2 +1,5 @@
 def myFunc(*args):
-    pass
+    return sum((args))
+
+
+print(myFunc(1, 2, 3))
