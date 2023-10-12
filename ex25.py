@@ -12,6 +12,8 @@ def up_low(my_string):
             upper += 1
         elif lett.islower():
             lower += 1
+        else:
+            pass
 
     count_string = f"No. of Upper case characters : {upper} \nNo. of Lower case characters : {lower}"
 
